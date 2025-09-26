@@ -14,11 +14,12 @@ services:
     pull_policy: always
     environment:
       - DB_SERVER=db
+      - DEFAULT_SECURITY_LEVEL=low
     depends_on:
       - db
     # Uncomment the next 2 lines to serve local source
-    # volumes:
-    #   - ./:/var/www/html
+    volumes:
+      - ./:/var/www/html
     networks:
       - dvwa
     ports:
