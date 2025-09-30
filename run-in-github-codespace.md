@@ -18,14 +18,10 @@ To launch DVWA in a GitHub Codespace, follow these steps:
 1. Fork this repository into your account or org.
 2. Click the **Code** green drop down button in the upper-right of your repo navbar.
 3. Click the **Create codespace on master** button.
-4. In the codespace terminal, run these 2 commands. 
+4. In the codespace terminal, run the start script:
 
    ```sh
-   cp config/config.inc.php.dist config/config.inc.php
-   ```
-
-   ```sh
-   docker compose up -d
+   ./start-dvwa.sh
    ```
 
 5. Click **Open in Browser** button to open your fresh DVWA in a new tab.
