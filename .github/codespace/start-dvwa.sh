@@ -27,3 +27,11 @@ echo "🔗 https://${CODESPACE_NAME}-${PORT}.${GITHUB_CODESPACES_PORT_FORWARDING
 
 # echo "👤 Default login: admin/password"
 # ^^^ hiding this for now 
+
+echo "⏳ Keeping Codespace active. Press Ctrl+C to exit."
+
+# Simple heartbeat so the process stays active and avoids idle suspension.
+while true; do
+    sleep 300
+    printf '🫀 Keepalive: %s\n' "$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+done
