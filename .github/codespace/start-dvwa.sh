@@ -24,5 +24,6 @@ echo "✅ DVWA setup complete!"
 echo "🌐 Click 'Open in Browser' button in pop-up to access DVWA"
 echo "Or use the URL below:"
 echo "🔗 https://${CODESPACE_NAME}-${PORT}.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}/"
-echo "👤 Default login: admin/password"
 
+# echo "👤 Default login: admin/password"
+# ^^^ hiding this for now 
