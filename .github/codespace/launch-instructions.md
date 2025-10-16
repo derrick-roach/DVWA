@@ -6,6 +6,10 @@
 
 <br>
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true)
+
+<br>
+
 **Time estimate:** 5 minutes
 
 <br>
@@ -14,19 +18,15 @@ To launch DVWA in a GitHub Codespace, follow these steps:
 1. Fork this repository into your account or org.
 2. Click the **Code** green drop down button in the upper-right of your repo navbar.
 3. Click the **Create codespace on master** button.
-4. In the codespace terminal, run these 2 commands. 
+4. In the codespace terminal, run the start script:
 
    ```sh
-   cp config/config.inc.php.dist config/config.inc.php
-   ```
-
-   ```sh
-   docker compose up -d
+   ./.github/codespace/start-dvwa.sh
    ```
 
 5. Click **Open in Browser** button to open your fresh DVWA in a new tab.
 6. Log in with admin account.
 7. In the **Setup** page, click **Create / Reset Database** button.
-8. When DVWA refreshes, re-login with admin account.
+8. When DVWA refreshes (about 10 seconds), re-login with admin account.
 9. Try to exploit the vulnerabilities.  
 
