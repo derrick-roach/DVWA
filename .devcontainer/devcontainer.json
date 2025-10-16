@@ -1,0 +1,11 @@
+{
+  "name": "DVWA Codespace",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        ".github/codespace/launch-instructions.md", 
+        "README.md"
+      ]
+    }
+  }
+}
